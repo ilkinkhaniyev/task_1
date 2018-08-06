@@ -1,0 +1,47 @@
+#counter{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 300px;
+    background-color: rgba(0, 0, 0, 0.404);
+    margin: 80px 0px;
+    .bg-image{
+        z-index: -1;
+        background-image: url(../images/bg-counter.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .container{
+        position: absolute;
+        left: 35px;
+        right: 35px;
+        .counter_col-4{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 300px;
+            align-items: center;
+            .counter_items{
+                text-align: center;
+                i{
+                    margin: 30px 0px;
+                    display: block;
+                    font-size: 30px;
+                    color: $Grey;
+                }
+                span{
+                    margin: 30px 0px;
+                    font-family: $MainFont;
+                    font-weight: bold;
+                    font-size: 3em;
+                    color: white;
+                }
+                p{
+                    margin: 30px 0px;
+                    font-family: $MainFont;
+                    font-size: 1.5em;
+                    text-transform: uppercase;
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,145 @@
+#events{
+    .container{
+        h1{
+            margin: 0px;
+            padding: 80px;
+            font-family: $MainFont;
+            font-size: 3.5em;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $Blue;
+        }
+        .events_col-3{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 370px auto;
+            grid-gap: 30px;
+            .events_post{
+                position: relative;
+                &:hover{
+                    img{
+                        position: relative;
+                        top: 10px;
+                        left: 10px;
+                        right: -5px;
+                        bottom: -5px;
+                        width: 95%;
+                    }
+                }
+                img{
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    width: 100%;
+                    transition: all .7s ease ;
+                    cursor: pointer;
+                    &:hover{
+                        position: relative;
+                        top: 10px;
+                        left: 10px;
+                        right: -5px;
+                        bottom: -5px;
+                        width: 95%;
+                    }
+                }
+                span{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    background: $FontColor;
+                    padding: 5px 20px;
+                    font-family: $MainFont;
+                    font-size: 3em;
+                    font-weight: bold;
+                    text-align: center;
+                    color: $Blue;
+                    p{
+                        margin: 0px;
+                        font-family: $MainFont;
+                        font-size: .4em;
+                        color: $Blue;
+                        font-weight: 100;
+                    }
+                }
+                .post{
+                    position: absolute;
+                    bottom: 10px;
+                    h4{
+                        margin: 0px;
+                        margin-top: 10px;
+                        font-family: $MainFont;
+                        font-size: 1.8em;
+                        font-weight: bold;
+                        letter-spacing: 1.5px;
+                        color: $Red;
+                        cursor: pointer;
+                        transition: all .4s;
+                        &:hover{
+                            color: $Blue;
+                        }
+                    }
+                    p{
+                        margin: 10px 15px 0px 0px;
+                        font-family: $MainFont;
+                        font-size: 1em;
+                        letter-spacing: 1.5px;
+                        color: $Grey;
+                        font-weight: 100;
+                    }
+                }
+            }
+            .button-contain{
+                grid-column: 1/4;
+                justify-self: center;
+                button{
+                    position: relative;
+                    width: 200px;
+                    padding: 15px 20px;
+                    border: none;
+                    outline: none;
+                    text-transform: uppercase;
+                    // margin-right: 5px;
+                    background-color: $Red;
+                    font-family: $MainFont;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    letter-spacing: 1px;
+                    color: white;
+                    transition: all .4s ease;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $FontColor;
+                        color: $Red;
+                        .top{
+                            width: 100%;
+                        }
+                        .bottom{
+                            width: 100%;
+                        }
+                    }
+                    .top{
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 0%;
+                        height: 3px;
+                        background: $Red;
+                        transition: all .3s linear;
+                    }
+                    .bottom{
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                        width: 0%;
+                        height: 3px;
+                        background: $Red;
+                        transition: all .3s linear;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,76 @@
+#nav-bar{
+    background-color: white;
+    .container{
+        .nav-bar_col-2{
+            position: relative;
+            display: grid;
+            grid-template-columns: 300px auto;
+            grid-template-rows: 100px;
+            background-color:white;
+            .logo{
+                position: relative;
+                top: 30px;
+                left: 10px;
+                margin: 0px;
+            }
+            .navigation{
+                position: absolute;
+                right: 0px;
+                ul{
+                    margin: 0px;
+                    padding: 0px;
+                    li{
+                        list-style: none;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        font-family: $MainFont;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        margin: 0px 20px;
+                        color: $Blue;
+                        line-height: 100px;
+                        transition: all .4s;
+                        cursor: pointer;
+                        &:hover{
+                            i{
+                                color: $Red;
+                                transform: rotate(180deg);
+                            }
+                        }
+                        a{
+                            text-decoration: none;
+                            transition: all .4s;
+                            &:hover{
+                                color: $Red;
+                            }
+                        }
+                        &:first-child{
+                            a{
+                                color: $Red;
+                            }
+                        }
+                        &:last-child{
+                            font-size: 20px;
+                            &:hover{
+                                color: $Red;
+                            }
+                            i{
+                                &:hover{
+                                    transform: none;
+                                }
+                            }
+                        }
+                        i{
+                            position: relative;
+                            left: 10px;
+                            transition: all .4s;
+                            &:hover{
+                                color: $Red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

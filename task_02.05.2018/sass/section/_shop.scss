@@ -1,0 +1,111 @@
+#shop{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows:auto;
+    background-color: white;
+    .container{
+        h1{
+            margin: 0px;
+            padding: 80px;
+            font-family: $MainFont;
+            font-size: 3.5em;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $Blue;
+        }
+        .shop_col-4{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 30px;
+
+            .shop_items{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 300px 300px;
+                justify-items: center;
+                transition: all .4s ease;
+                &:hover{
+                    border: none;
+                    box-shadow: 0px 0px 2px 2px lightgrey;
+                }
+                img{
+                    position: relative;
+                    top: 30px;
+                }
+                .items_info{
+                    text-align: center;
+                    p{
+                        margin-top: 50px;
+                        font-family: $MainFont;
+                        font-size: 1.9em;
+                        color: $Blue;
+                        letter-spacing: 2px;
+                        cursor: pointer;
+                        transition: all .4s ease;
+                        &:hover{
+                            color: $Red;
+                        }
+                    }
+                    span{
+                        margin: 10px;
+                        font-family: $MainFont;
+                        font-size: 2em;
+                        font-weight: bold;
+                        color: $Blue;
+                    }
+                    .button-contain{
+                        grid-column: 1/4;
+                        justify-self: center;
+                        button{
+                            position: relative;
+                            margin: 20px 20px;
+                            width: 230px;
+                            padding: 15px 20px;
+                            border: none;
+                            outline: none;
+                            text-transform: uppercase;
+                            background-color: $Red;
+                            font-family: $MainFont;
+                            font-weight: bold;
+                            font-size: 1.2em;
+                            letter-spacing: 1px;
+                            color: white;
+                            transition: all .4s ease;
+                            cursor: pointer;
+                            &:hover{
+                                background-color: $FontColor;
+                                color: $Red;
+                                .top{
+                                    width: 100%;
+                                }
+                                .bottom{
+                                    width: 100%;
+                                }
+                            }
+                            .top{
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                width: 0%;
+                                height: 3px;
+                                background: $Red;
+                                transition: all .3s linear;
+                            }
+                            .bottom{
+                                position: absolute;
+                                bottom: 0px;
+                                right: 0px;
+                                width: 0%;
+                                height: 3px;
+                                background: $Red;
+                                transition: all .3s linear;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

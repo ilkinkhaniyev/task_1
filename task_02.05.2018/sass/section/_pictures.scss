@@ -1,0 +1,194 @@
+#pictures{
+    .container{
+        .pictures_col-4{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 320px 450px;
+            grid-gap: 30px;
+            .col-4-top{ 
+                position: relative;
+                overflow: hidden;
+                height: 320px;
+                background-color: white;
+                cursor: pointer;
+                &:hover{
+                    img{
+                        top: -10px;
+                    }
+                    .info{
+                        bottom: 0px;
+                        background-color: $Red;
+                        color: white;
+                        h4{
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                .info{
+                    position: absolute;
+                    margin: 0px;
+                    padding: 0px 20px;
+                    font-family: $MainFont;
+                    color: $Blue;
+                    transition: all .4s ease;
+                    h4{
+                        margin: 5px;
+                        text-transform: uppercase;
+                        font-size: 1.2em;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        margin: 20px 0px;
+                        letter-spacing: 1px;
+                    }
+                }
+                img{
+                    position: relative;
+                    top: 0px;
+                    width: 100%;
+                    transition: all .4s ease-in-out;
+                }
+            }
+            .col-4-bottom-1{
+                position: relative;
+                overflow: hidden;
+                grid-column: 1/3;
+                height: 450px;
+                background-color: white;
+                cursor: pointer;
+                &:hover{
+                    img{
+                        top: -10px;
+                    }
+                    .info{
+                        bottom: 0px;
+                        background-color: $Red;
+                        color: white;
+                        h4{
+                            margin-top: 15px;
+                        }
+                    }
+                }
+                .info{
+                    position: absolute;
+                    margin: 0px;
+                    padding: 0px 20px;
+                    font-family: $MainFont;
+                    color: $Blue;
+                    transition: all .4s ease;
+                    h4{
+                        margin: 5px;
+                        text-transform: uppercase;
+                        font-size: 1.2em;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        margin: 20px 0px;
+                        letter-spacing: 1px;
+                    }
+                }
+                img{
+                    position: relative;
+                    top: 0px;
+                    width: 100%;
+                    transition: all .4s ease-in-out;
+                }
+            }
+            .col-4-bottom{
+                position: relative;
+                background-color: white;
+                transition: all .4s linear;
+                &:hover{  
+                    .button-contain{
+                        opacity: 1;
+                        button:nth-child(1){
+                            transform: translateX(0px);
+                        }
+                        button:nth-child(2){
+                            transform: translateX(0px);
+                        }
+                    }
+                }
+                .info{
+                    padding: 20px 20px;
+                    span{
+                        margin: 0px;
+                        padding: 2px 15px;
+                        font-family: $MainFont;
+                        font-size: 1.5em;
+                        text-transform: uppercase;
+                        background-color: $Red;
+                        color: white;
+                        letter-spacing: 1px;
+                    }
+                    p{
+                        font-family: $MainFont;
+                        font-size: 1.2em;
+                        color: $Blue;
+                        letter-spacing: 1.5px;
+                        cursor: pointer;
+                        transition: all .4s;
+                        &:hover{
+                            color: $Red;
+                        }
+                    }
+                    h4{
+                        margin: 0px;
+                        font-family: $MainFont;
+                        font-size: 2em;
+                        color: $Blue;
+                    }
+                }
+                img{
+                    position: relative;
+                    top: 20px;
+                    left:45px;
+                }
+                .button-contain{ 
+                    position: absolute;
+                    bottom: 100px;
+                    left: 50px; 
+                    opacity: 0;
+                    button:nth-child(1){ 
+                        transform: translateX(-30px); 
+                        padding: 15px 40px;
+                        margin-bottom: 10px;
+                        border: none;
+                        outline: none;
+                        background-color: $Red;
+                        font-family: $MainFont;
+                        font-weight: bold;
+                        font-size: 1.2em;
+                        text-transform: uppercase;
+                        letter-spacing: 1.5px;
+                        color: white;
+                        cursor: pointer;
+                        transition: all .4s;
+                        &:hover{
+                            background-color: $Blue; 
+                        }
+                    }
+                    button:nth-child(2){ 
+                        transform: translateX(-50px);
+                        padding: 15px 40px;
+                        margin-bottom: 10px;
+                        border: none;
+                        outline: none;
+                        background-color: $Grey;
+                        font-family: $MainFont;
+                        font-weight: bold;
+                        font-size: 1.2em;
+                        text-transform: uppercase;
+                        letter-spacing: 1.2px;
+                        color: white;
+                        cursor: pointer;
+                        transition: all .4s;
+                        &:hover{
+                            background-color: $Blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

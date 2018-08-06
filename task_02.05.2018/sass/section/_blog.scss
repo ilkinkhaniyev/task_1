@@ -1,0 +1,155 @@
+#blog{
+    .container{
+        h1{
+            margin: 0px;
+            padding: 80px;
+            font-family: $MainFont;
+            font-size: 3.5em;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: $Blue;
+        }
+        .blog_col-3{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 630px 100px;
+            grid-gap: 30px;
+            .blog_item{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: 310px 100px 150px 70px;
+                background-color: white;
+                position: relative;
+                &:hover{
+                    .blog_image{
+                        img{
+                            position: relative;
+                            top: 0px;
+                            left: 10px;
+                            right: -5px;
+                            bottom: -5px;
+                            width: 95%;
+                        }
+                    }
+                }
+                .blog_image{
+                    position: relative;
+                    img{
+                        position: relative;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        bottom: 0px;
+                        width: 100%;
+                        transition: all .7s;
+                        cursor: pointer;
+                        &:hover{
+                            position: relative;
+                            top: 0px;
+                            left: 10px;
+                            right: -5px;
+                            bottom: -5px;
+                            width: 95%;
+                        }
+                    }
+                    .blog_info{
+                        position: absolute;
+                        left: 20px;
+                        bottom: -10px;
+                        padding: 0px 10px;
+                        background-color: $Red;
+                        font-family: $MainFont;
+                        color: white;
+                        font-size: 1.2em;
+                        text-transform: uppercase;
+                    }
+                }
+                h4{
+                    padding: 30px 20px;
+                    margin: 0px;
+                    font-family: $MainFont;
+                    font-size: 1.8em;
+                    font-weight: bold;
+                    letter-spacing: 1.5px;
+                    color: $Blue;
+                    cursor: pointer;
+                    transition: all .4s;
+                    &:hover{
+                        color: $Red;
+                    }
+                }
+                p{
+                    margin: 0px;
+                    padding: 20px 20px;
+                    font-family: $MainFont;
+                    font-size: 1.3em;
+                    letter-spacing: 1.5px;
+                    color: $Grey;
+                    font-weight: 100;
+                }
+                .blog_date{
+                    position: relative;
+                    left: 20px;
+                    font-family: $MainFont;
+                    font-size: 1em;
+                    letter-spacing: 1.5px;
+                    color: $Grey;
+                    font-weight: 100;
+                    i{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+            .button-contain{
+                grid-column: 1/4;
+                justify-self: center;
+                button{
+                    position: relative;
+                    margin: 20px 20px;
+                    width: 230px;
+                    padding: 15px 20px;
+                    border: none;
+                    outline: none;
+                    text-transform: uppercase;
+                    background-color: $Red;
+                    font-family: $MainFont;
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    letter-spacing: 1px;
+                    color: white;
+                    transition: all .4s ease;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: $FontColor;
+                        color: $Red;
+                        .top{
+                            width: 100%;
+                        }
+                        .bottom{
+                            width: 100%;
+                        }
+                    }
+                    .top{
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 0%;
+                        height: 3px;
+                        background: $Red;
+                        transition: all .3s linear;
+                    }
+                    .bottom{
+                        position: absolute;
+                        bottom: 0px;
+                        right: 0px;
+                        width: 0%;
+                        height: 3px;
+                        background: $Red;
+                        transition: all .3s linear;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+$Red:rgb(219,18,18);
+$Grey:rgb(174,177,190);
+$Blue:rgb(41,41,58);
+$FontColor:rgb(243,243,249);
+$MainFont:'Oswald', sans-serif;
+$MainWidth:1200px;
+
+@import "section/common";
+@import "section/topbar";
+@import "section/navbar";
+@import "section/slider";
+@import "section/book";
+@import "section/pictures";
+@import "section/events";
+@import "section/counter";
+@import "section/about";
+@import "section/shop";
+@import "section/blog";
+@import "section/newsletter";
+@import "section/services";
+@import "section/team";
+@import "section/gallery";
+@import "section/contacts";
+@import "section/footer";
